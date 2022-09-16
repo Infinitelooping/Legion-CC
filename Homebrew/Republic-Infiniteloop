@@ -1,28 +1,34 @@
 // Begin Template
 {
-  // Clone Command Center. A Stationary Commander.
+  // Start of definition of units
+  // See the offical.json or homebrew.json to see how units similar to what you're trying to sideload are scripted
   "units": {
+
+    // Faction of unit
+    // Existing factions = Rebel, Empire, Republic, Seperatist, ShadowCollective
+    // Homebrew factions = Resistance, FirstOrder, SithEmpire, RevansSithEmpire, Scum, etc.
     "Republic": {
+
+      // Rank of unit = Commander, Operative, Corps, Special Forces, Support, Heavy
       "Commander": [
         {
+       
           "name": "Command Center",
-          // If the unit is a heavy weapons team use this, this will make the upgrade unit the unit leader
-         
-          // Unit Card Image
+
           "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788425590/4AB2CCCFC2F45B3ACB9927166F6014A2903D7DCE/",
-          
+
           "size": "epic",
-          
+
           "type": "Emplacement Trooper",
 
-          "points": 140,
+          "points": 160,
 
           "speed": 0,
           
           "upgrades": {
             "Command": 2,
-            "Crew": 1,
-            "comms": 1
+            "Pilot": 1,
+            "Comms": 1
           },
           
           "minis": [
@@ -31,139 +37,71 @@
               "diffuse": "http://cloud-3.steamusercontent.com/ugc/1769372527117111083/C23EADE7730089DDC52E8BA1B8F270BB988F5F6A/"
             }
           ],
-
-          // List of command cards that can only be taken by this unit
+          
           "commands": [
             {
               "name": "For The Republic",
 
               // Image url for the command card
-              "image": "",
-              
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036127/CF8D8E07205CB523EA3D2EE71AD61D9FB96B17BB/",
+
               "pip": 1
             },
+            {
               "name": "Defense Order",
 
               // Image url for the command card
-              "image": "",
-              
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036127/CF8D8E07205CB523EA3D2EE71AD61D9FB96B17BB/",
+
               "pip": 2
-            
             },
             {
               "name": "Advance Deployment",
 
               // Image url for the command card
-              "image": "",
-              
+              "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036127/CF8D8E07205CB523EA3D2EE71AD61D9FB96B17BB/",
+
               "pip": 3
-            }
-          ]
-        }
-      ]
+             }
+           ],
+         }
+      ],
     }
   },
-    "Crew": [
+
+  // Start of definition of upgrades
+  "upgrades": {
+   "Crew": [
       {
-        
         "name": "Yoda",
-
-        // Upgrade card image url
-        "image": "",
-     
+        "image": "http://cloud-3.steamusercontent.com/ugc/1638738640747570525/CACD6285B8098528A1E23C5AA68F3EB68076B4DF/",
         "points": 12,
-
-        // Some upgrades can only be taken with certain factions, untis, or unit types. This is done using restrictions
         "restrictions": {
-          // Include defines what conditions allow an upgrade card to appear
           "include": {
-
-            // Alignment can be either Light (Rebel, Republic) or Dark (Empire, Seperatist)
-            // Note that homebrew factions do not have Dark or Light defined
-            "alignment": ["Light"],
-
-            // The faction that can equip the card
-            "faction": ["Republic"],
-
-            // The slot that needs to be present for this upgrade card to show up
-            "slot": ["Crew"],
-
-            // The unit(s) that can equip this upgrade card
-            "unit": ["Command Center"],
-
-            // The type of unit(s) that can equip this upgrade card
-            "type": ["Commander"]
+            "unit": ["Command Center"]
           }
         }
-      }
-    ],
-    "Crew": [
+      },
       {
-        
         "name": "Mace Windu",
-
-        // Upgrade card image url
-        "image": "",
-     
+        "image": "http://cloud-3.steamusercontent.com/ugc/1638738640747570525/CACD6285B8098528A1E23C5AA68F3EB68076B4DF/",
         "points": 13,
-
-        // Some upgrades can only be taken with certain factions, untis, or unit types. This is done using restrictions
         "restrictions": {
-          // Include defines what conditions allow an upgrade card to appear
           "include": {
-
-            // Alignment can be either Light (Rebel, Republic) or Dark (Empire, Seperatist)
-            // Note that homebrew factions do not have Dark or Light defined
-            "alignment": ["Light"],
-
-            // The faction that can equip the card
-            "faction": ["Republic"],
-
-            // The slot that needs to be present for this upgrade card to show up
-            "slot": ["Crew"],
-
-            // The unit(s) that can equip this upgrade card
-            "unit": ["Command Center"],
-
-            // The type of unit(s) that can equip this upgrade card
-            "type": ["Commander"]
+            "unit": ["Command Center"]
           }
         }
-      }
-    ],
-    "Crew": [
-      {
-        
+      },
+       {
         "name": "Clone Field Commander",
-
-        // Upgrade card image url
-        "image": "",
-     
+        "image": "http://cloud-3.steamusercontent.com/ugc/1638738640747570525/CACD6285B8098528A1E23C5AA68F3EB68076B4DF/",
         "points": 8,
-
-        // Some upgrades can only be taken with certain factions, untis, or unit types. This is done using restrictions
         "restrictions": {
-          // Include defines what conditions allow an upgrade card to appear
           "include": {
-
-            // Alignment can be either Light (Rebel, Republic) or Dark (Empire, Seperatist)
-            // Note that homebrew factions do not have Dark or Light defined
-            "alignment": ["Light"],
-
-            // The faction that can equip the card
-            "faction": ["Republic"],
-
-            // The slot that needs to be present for this upgrade card to show up
-            "slot": ["Crew"],
-
-            // The unit(s) that can equip this upgrade card
-            "unit": ["Command Center"],
-
-            // The type of unit(s) that can equip this upgrade card
-            "type": ["Commander"]
+            "unit": ["Command Center"]
           }
         }
-      }
+      },
     ]
   },
 
@@ -189,3 +127,4 @@
     ]
   }
 }
+
