@@ -1,0 +1,191 @@
+// Begin Template
+{
+  // Clone Command Center. A Stationary Commander.
+  "units": {
+    "Republic": {
+      "Commander": [
+        {
+          "name": "Command Center",
+          // If the unit is a heavy weapons team use this, this will make the upgrade unit the unit leader
+         
+          // Unit Card Image
+          "image": "http://cloud-3.steamusercontent.com/ugc/1683770969788425590/4AB2CCCFC2F45B3ACB9927166F6014A2903D7DCE/",
+          
+          "size": "epic",
+          
+          "type": "Emplacement Trooper",
+
+          "points": 140,
+
+          "speed": 0,
+          
+          "upgrades": {
+            "Command": 2,
+            "Crew": 1,
+            "comms": 1
+          },
+          
+          "minis": [
+            {
+              "mesh": "http://cloud-3.steamusercontent.com/ugc/785234540537100371/0B15B2810ABEBE5429E4A24852D96BAC2DC28BF7/",
+              "diffuse": "http://cloud-3.steamusercontent.com/ugc/785234540537079134/11A17263AD81DC9D4271B7C6BD809B69141DCB61/"
+            }
+          ],
+
+          // List of command cards that can only be taken by this unit
+          "commands": [
+            {
+              "name": "For The Republic",
+
+              // Image url for the command card
+              "image": "",
+              
+              "pip": 1
+            },
+              "name": "Defense Order",
+
+              // Image url for the command card
+              "image": "",
+              
+              "pip": 2
+            
+            },
+            {
+              "name": "Advance Deployment",
+
+              // Image url for the command card
+              "image": "",
+              
+              "pip": 3
+            }
+          ]
+        }
+      ]
+    }
+  },
+    "Crew": [
+      {
+        
+        "name": "Yoda",
+
+        // Upgrade card image url
+        "image": "",
+     
+        "points": 12,
+
+        // Some upgrades can only be taken with certain factions, untis, or unit types. This is done using restrictions
+        "restrictions": {
+          // Include defines what conditions allow an upgrade card to appear
+          "include": {
+
+            // Alignment can be either Light (Rebel, Republic) or Dark (Empire, Seperatist)
+            // Note that homebrew factions do not have Dark or Light defined
+            "alignment": ["Light"],
+
+            // The faction that can equip the card
+            "faction": ["Republic"],
+
+            // The slot that needs to be present for this upgrade card to show up
+            "slot": ["Crew"],
+
+            // The unit(s) that can equip this upgrade card
+            "unit": ["Command Center"],
+
+            // The type of unit(s) that can equip this upgrade card
+            "type": ["Commander"]
+          }
+        }
+      }
+    ],
+    "Crew": [
+      {
+        
+        "name": "Mace Windu",
+
+        // Upgrade card image url
+        "image": "",
+     
+        "points": 13,
+
+        // Some upgrades can only be taken with certain factions, untis, or unit types. This is done using restrictions
+        "restrictions": {
+          // Include defines what conditions allow an upgrade card to appear
+          "include": {
+
+            // Alignment can be either Light (Rebel, Republic) or Dark (Empire, Seperatist)
+            // Note that homebrew factions do not have Dark or Light defined
+            "alignment": ["Light"],
+
+            // The faction that can equip the card
+            "faction": ["Republic"],
+
+            // The slot that needs to be present for this upgrade card to show up
+            "slot": ["Crew"],
+
+            // The unit(s) that can equip this upgrade card
+            "unit": ["Command Center"],
+
+            // The type of unit(s) that can equip this upgrade card
+            "type": ["Commander"]
+          }
+        }
+      }
+    ],
+    "Crew": [
+      {
+        
+        "name": "Clone Field Commander",
+
+        // Upgrade card image url
+        "image": "",
+     
+        "points": 8,
+
+        // Some upgrades can only be taken with certain factions, untis, or unit types. This is done using restrictions
+        "restrictions": {
+          // Include defines what conditions allow an upgrade card to appear
+          "include": {
+
+            // Alignment can be either Light (Rebel, Republic) or Dark (Empire, Seperatist)
+            // Note that homebrew factions do not have Dark or Light defined
+            "alignment": ["Light"],
+
+            // The faction that can equip the card
+            "faction": ["Republic"],
+
+            // The slot that needs to be present for this upgrade card to show up
+            "slot": ["Crew"],
+
+            // The unit(s) that can equip this upgrade card
+            "unit": ["Command Center"],
+
+            // The type of unit(s) that can equip this upgrade card
+            "type": ["Commander"]
+          }
+        }
+      }
+    ]
+  },
+
+  // Command cards that aren't tied to a specific unit are listed here
+  "commands": {
+    // Generic commands available to all factions
+    "Generic": [
+      {
+        "name": "Ambush",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564037146/9E4C2F5453A9016854F388BB078666B71AC794B6/",
+        "pip": 1
+      }
+    ],
+
+    // Commands that are only available to certain factions
+    // Example below is for Rebels
+    "Rebel": [
+      {
+        "name": "Sabotaged Communications",
+        "image": "http://cloud-3.steamusercontent.com/ugc/1680393865564036214/A7A0CC7689A2F66143FB6AE89914414462A09635/",
+        "pip": 1
+      }
+    ]
+  }
+}
